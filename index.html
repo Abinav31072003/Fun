@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeba — Will You Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">
+            <div class="badge">💌</div>
+            <div>
+                <h2 class="site-title">Zeba's Valentine</h2>
+                <p class="site-sub">A little surprise made with love</p>
+            </div>
+        </div>
+        <div class="from-sandy">
+            <span class="sandy-text">With love, Santhosh 💕</span>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" id="question-container">
+            <h1 class="title">Will you be my Valentine, <span id="display-name">Zeba</span>? 💕</h1>
+            <div class="gif-container">
+                <!-- Primary source: GIPHY CDN; JS will swap to fallback if blocked -->
+                <img id="main-gif" src="https://media.giphy.com/media/3oEduSbSGpGaRX2Vri/giphy.gif" alt="Cute Bear Valentine" class="valentine-gif" data-fallback="cute-bear.gif">
+            </div>
+            <div class="buttons">
+                <button class="btn yes-btn" id="yes-btn">Yes! 💖</button>
+                <button class="btn no-btn" id="no-btn">No 😢</button>
+            </div>
+            <p class="hint">Tip: Try clicking Yes — little surprises await ✨</p>
+        </section>
+
+        <section class="container hidden" id="success-container">
+            <h1 class="title success-title">Yay, <span id="success-name">Zeba</span>! 🎉💕</h1>
+            <div class="gif-container">
+                <img id="success-gif" src="https://media.giphy.com/media/1BdIPa2LJtG0w/giphy.gif" alt="Happy Bears" class="valentine-gif" data-fallback="happy-bear.gif">
+            </div>
+            <p class="love-message">I promise to make every day special — with love, always.</p>
+            <div class="hearts" aria-hidden>
+                <span class="heart">❤️</span>
+                <span class="heart">💕</span>
+                <span class="heart">💖</span>
+                <span class="heart">💗</span>
+                <span class="heart">💘</span>
+            </div>
+        </section>
+    </main>
+
+    <div class="floating-hearts" id="floating-hearts"></div>
+
+    <footer class="site-footer">
+        <small>Made with ❤ for Zeba</small>
+        <p class="sandy-signature">~ Santhosh 💖</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
